@@ -15,6 +15,16 @@ public class Animal {
 		this.datanasc = datanasc;
 		this.ficha = ficha;
 	}
+	
+	public double getGastosVacinas() {
+		double total =0;
+		
+		for (Vacina v : ficha.getVacinas())
+		total += v.getPreco();
+		
+		return total;
+	}
+	
 
 	public String getClassificacao() {
 		return classificacao;
