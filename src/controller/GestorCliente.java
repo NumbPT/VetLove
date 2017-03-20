@@ -1,3 +1,4 @@
+
 package controller;
 
 import java.util.ArrayList;
@@ -24,6 +25,17 @@ public class GestorCliente {
 		arCliente.add(c);
 		
 	}
+
+	
+public void addClient(Cliente c) {
+		int novoId = arCliente.size();
+		
+		c.setId(novoId);
+		
+		arCliente.add(c);
+		
+	}
+
 
 	public Cliente getCliente(int id) {
 		/*foreeach
